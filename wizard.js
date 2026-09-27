@@ -9,7 +9,7 @@ const QUESTIONS = [
   { key: 'foerderung', q: 'Nutzt du staatliche Förderungen bereits aus?', options: ['Ja', 'Nein', 'Weiß ich nicht'] },
   { key: 'thema', q: 'Was interessiert dich am meisten?', options: ['Altersvorsorge', 'Berufsunfähigkeit', 'Krankenversicherung', 'Versicherungen & Absicherung', 'Immobilien', 'Investment'] },
 ];
-const PHONE = '0179 761 06 25';
+const PHONE = '+49 179 7610625';
 
 const wz = document.getElementById('wizard');
 const body = wz.querySelector('.wz-body');
