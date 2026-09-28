@@ -289,3 +289,28 @@ footer a:hover{color:#fff}
 .wz-done p{color:rgba(255,255,255,.72);max-width:28rem;margin:0 auto 1.6rem}
 .wz-note{font-size:.76rem;color:rgba(255,255,255,.45);text-align:center;margin-top:1.4rem;line-height:1.5}
 @media(max-width:560px){.wz-form .two{grid-template-columns:minmax(0,1fr)}.wizard{padding:1.2rem}}
+
+/* Leistungs-Unterseiten */
+.cell .more{margin-top:1rem;font-size:.9rem;font-weight:500;color:var(--navy);display:inline-flex;align-items:center;gap:.4rem}
+.cell.navy .more,.cell.photo .more{color:#fff}
+.sub{padding-top:9rem}
+.sub-hero{max-width:46rem;margin-bottom:3rem}
+.sub-hero .eyebrow{gap:.3rem}
+.sub-hero h1{font-size:clamp(2.3rem,4.6vw,3.8rem);margin:1.2rem 0 1.2rem;hyphens:manual}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-bottom:3.5rem}
+.fact{padding:1.6rem;border-radius:var(--r-out);background:var(--surface);box-shadow:inset 0 0 0 1px var(--line)}
+.fact b{display:block;font-family:var(--serif);font-weight:500;font-size:1.8rem;line-height:1.05;color:var(--navy);margin-bottom:.5rem}
+.fact span{color:var(--muted);font-size:.95rem}
+.prose{max-width:760px}
+.prose h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:2.8rem 0 1rem}
+.prose p,.prose li{color:var(--muted);font-size:1.05rem;margin-bottom:1rem}
+.prose ul{padding-left:1.2rem}
+.prose .faq .a{padding-right:2rem}
+.sub-cta{margin-top:4rem;padding:2.5rem;border-radius:var(--r-out);background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
+.sub-cta h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:.5rem}
+.sub-cta p{color:rgba(255,255,255,.72)}
+.sub-more{margin-top:3.5rem}
+.sub-links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.sub-links a{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1rem;border-radius:999px;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);font-size:.95rem;font-weight:500;color:var(--navy);transition:transform .4s var(--e),box-shadow .4s var(--e)}
+.sub-links a:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1px var(--navy)}
+@media(max-width:760px){.facts{grid-template-columns:1fr}.sub{padding-top:7rem}.sub-cta{padding:1.8rem}}
