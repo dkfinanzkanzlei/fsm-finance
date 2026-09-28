@@ -118,7 +118,7 @@ body.menu-open{overflow:hidden}
 .cell{grid-column:span 4;border-radius:var(--r-out);padding:2rem;position:relative;overflow:hidden;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);min-height:240px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .7s var(--e),box-shadow .7s var(--e)}
 .cell:hover{transform:translateY(-4px);box-shadow:inset 0 0 0 1px var(--line),var(--shadow)}
 .cell i{font-size:1.7rem;color:var(--navy);margin-bottom:auto}
-.cell h3{margin:1.6rem 0 .5rem}
+.cell h3{margin:1.6rem 0 .5rem;hyphens:auto}
 .cell p{color:var(--muted);font-size:.95rem;max-width:26rem}
 .cell.c7{grid-column:span 7}.cell.c5{grid-column:span 5}.cell.c8{grid-column:span 8}
 .cell.navy{background:var(--navy);color:#fff;box-shadow:none}
