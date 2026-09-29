@@ -167,10 +167,11 @@ body.menu-open{overflow:hidden}
 .cell.navy{background:var(--navy);color:#fff;box-shadow:none}
 .cell.navy i{color:#fff}.cell.navy p{color:rgba(255,255,255,.72)}
 .cell.tint{background:var(--tint)}
-.cell.photo{color:#fff;min-height:360px;box-shadow:none}
+.cell.photo{color:#fff;min-height:320px;box-shadow:none}
+.cell.c7.photo{min-height:360px}
 .cell.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--e)}
 .cell.photo:hover img{transform:scale(1.04)}
-.cell.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,33,72,.9),rgba(15,33,72,.15) 60%,transparent)}
+.cell.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(15,33,72,.94),rgba(15,33,72,.35) 60%,rgba(15,33,72,.1))}
 .cell.photo>*{position:relative;z-index:1}
 .cell.photo i{color:#fff}.cell.photo p{color:rgba(255,255,255,.78)}
 @media(max-width:900px){.cell,.cell.c7,.cell.c5,.cell.c8{grid-column:span 12}.cell{min-height:0;padding:1.6rem}.cell i{margin-bottom:1.2rem}.cell h3{margin-top:0}}
@@ -238,7 +239,13 @@ body.menu-open{overflow:hidden}
 .contact .two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .contact .err{display:none;color:#FFB4B4;font-size:.8rem}
 .contact form.invalid .err{display:block}
-@media(max-width:900px){.contact .wrap{grid-template-columns:minmax(0,1fr)}.contact .two{grid-template-columns:minmax(0,1fr)}}
+.office{grid-column:1/-1;position:relative;margin:0;border-radius:var(--r-out);overflow:hidden;min-height:300px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.1)}
+.office img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.office figcaption{position:absolute;left:14px;right:14px;bottom:14px;display:flex;align-items:center;gap:.9rem;padding:1rem 1.2rem;border-radius:var(--r-in);background:rgba(15,33,72,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:.95rem;color:rgba(255,255,255,.85);line-height:1.4}
+.office figcaption>i{font-size:1.4rem;flex:none}
+.office figcaption b{display:block;color:#fff;font-weight:600}
+.office figcaption a{margin-left:auto;color:#fff;font-weight:600;display:inline-flex;align-items:center;gap:.4rem;white-space:nowrap}
+@media(max-width:900px){.contact .wrap{grid-template-columns:minmax(0,1fr)}.contact .two{grid-template-columns:minmax(0,1fr)}.office{min-height:240px}}
 
 /* ---------- Footer ---------- */
 footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:2rem 0 2.5rem;font-size:.85rem}
@@ -360,4 +367,33 @@ footer a:hover{color:#fff}
 .sub-links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
 .sub-links a{display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1rem;border-radius:999px;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);font-size:.95rem;font-weight:500;color:var(--navy);transition:transform .4s var(--e),box-shadow .4s var(--e)}
 .sub-links a:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1px var(--navy)}
-@media(max-width:760px){.facts{grid-template-columns:1fr}.sub{padding-top:7rem}.sub-cta{padding:1.8rem}}
+/* Unterseiten: Aufbau wie Entwurf (Hero mit Bild, Faktenband, Text + Seitenleiste) */
+.sub-hero{max-width:none;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,5rem);align-items:center;margin-bottom:2.5rem}
+.crumbs{font-size:.85rem;color:var(--muted)}
+.crumbs a{color:var(--navy);font-weight:500}
+.sub-hero .cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem}
+.sub-img>div{aspect-ratio:4/3}
+.sub-img img{width:100%;height:100%;object-fit:cover}
+.facts{background:var(--navy);border-radius:var(--r-out);padding:1.6rem;gap:1.4rem}
+.fact{background:none;box-shadow:none;border-radius:0;padding:.3rem 0 .3rem 1.2rem;border-left:1px solid rgba(255,255,255,.2)}
+.fact b{color:#fff}
+.fact span{color:rgba(255,255,255,.72)}
+.sub-body{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.85fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.prose .intro{font-family:var(--serif);font-size:clamp(1.3rem,2vw,1.6rem);line-height:1.4;color:var(--ink)}
+.prose .checks{list-style:none;padding:0;display:grid;gap:.6rem}
+.prose .checks li{display:flex;gap:.8rem;align-items:flex-start;margin:0;padding:1rem 1.2rem;border-radius:var(--r-in);background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);font-size:1rem}
+.prose .checks i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--tint);color:var(--navy);display:grid;place-items:center;font-size:.95rem;margin-top:.1rem}
+.sub-aside{position:sticky;top:110px;display:grid;gap:1rem}
+.aside-card{padding:1.8rem;border-radius:var(--r-out);background:var(--navy-deep);color:#fff;display:grid;gap:.9rem;justify-items:start}
+.aside-card .eyebrow{background:rgba(255,255,255,.1);color:#fff;margin:0}
+.aside-card .big{font-family:var(--serif);font-size:1.6rem;line-height:1.1;margin-bottom:.3rem}
+.aside-card .btn{width:100%;justify-content:space-between}
+.aside-card small{color:rgba(255,255,255,.55);font-size:.8rem}
+.aside-nav{padding:1.4rem 1.6rem;border-radius:var(--r-out);background:var(--surface);box-shadow:inset 0 0 0 1px var(--line)}
+.aside-nav .eyebrow{margin-bottom:.6rem}
+.aside-nav .sub-links{flex-direction:column;gap:0;margin:0}
+.aside-nav .sub-links a{background:none;box-shadow:none;border-radius:0;padding:.7rem 0;border-bottom:1px solid var(--line);width:100%}
+.aside-nav .sub-links a:last-child{border:0}
+.aside-nav .sub-links a:hover{transform:translateX(4px);box-shadow:none}
+@media(max-width:900px){.sub-hero,.sub-body{grid-template-columns:minmax(0,1fr)}.sub-aside{position:static}.facts{grid-template-columns:1fr;gap:1rem}.fact{border-left:0;border-top:1px solid rgba(255,255,255,.2);padding:1rem 0 0}.fact:first-child{border:0;padding-top:0}}
+@media(max-width:760px){.sub{padding-top:7rem}.sub-hero h1{font-size:clamp(2rem,8vw,2.6rem)}}
