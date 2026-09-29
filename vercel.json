@@ -1,1 +1,1 @@
-{"cleanUrls":true}
+{"cleanUrls":true,"redirects":[{"source":"/leistungen/arbeitsunfaehigkeitsabsicherung","destination":"/leistungen/arbeitskraftabsicherung","permanent":true}]}

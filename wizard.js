@@ -7,7 +7,7 @@ const QUESTIONS = [
   { key: 'einkommen', q: 'Wie hoch ist dein monatliches Nettoeinkommen?', options: ['Unter 1.500 €', '1.500–3.000 €', '3.000–5.000 €', 'Über 5.000 €'] },
   { key: 'sparen', q: 'Sparst du bereits regelmäßig?', options: ['Ja, jeden Monat', 'Ja, aber unregelmäßig', 'Nein, noch nicht'] },
   { key: 'foerderung', q: 'Nutzt du staatliche Förderungen bereits aus?', options: ['Ja', 'Nein', 'Weiß ich nicht'] },
-  { key: 'thema', q: 'Was interessiert dich am meisten?', options: ['Altersvorsorge', 'Arbeitsunfähigkeitsabsicherung', 'Krankenversicherung', 'Versicherungen & Absicherung', 'Immobilien', 'Investment'] },
+  { key: 'thema', q: 'Was interessiert dich am meisten?', options: ['Altersvorsorge', 'Arbeitskraftabsicherung', 'Krankenversicherung', 'Versicherungen & Absicherung', 'Immobilien', 'Investment'] },
 ];
 const PHONE = '+49 179 7610625';
 
