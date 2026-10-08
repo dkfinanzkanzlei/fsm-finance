@@ -182,6 +182,8 @@ body.menu-open{overflow:hidden}
 .team .sticky{position:sticky;top:120px}
 .team .sticky h2{margin-bottom:1.2rem}
 .team .sticky p{color:var(--muted);font-size:1.05rem;max-width:30rem;margin-bottom:1.2rem}
+.team-photo{max-width:30rem;margin-bottom:1.5rem}
+.team-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
 .cascade{display:grid;gap:2rem;padding:1rem 0}
 .person{transition:transform .8s var(--e)}
 .person:nth-child(1){transform:rotate(-1.5deg);justify-self:start;width:88%}
